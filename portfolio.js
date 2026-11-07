@@ -21,7 +21,8 @@
         <div class="container">
             <nav class="navbar">
                 <a class="brand" href="#Home">
-                    <img src="./Portfolio_files/logo_mahfuz.png" alt="Md. Mahfuz Sarker" style="height: 38px; width: auto; object-fit: contain;">
+                    <span class="brand-badge">MS</span>
+                    <h4 class="brand-title">Md. Mahfuz <span>Sarker</span></h4>
                 </a>
                 <div class="burger" id="burger" aria-label="Toggle navigation">
                     <span class="burger-line"></span>
@@ -31,8 +32,9 @@
                 <div class="menu" id="menu">
                     <!-- Drawer Header for Mobile with Brand and Close Button -->
                     <div class="menu-drawer-header">
-                        <div class="menu-drawer-brand">
-                            <img src="./Portfolio_files/logo_mahfuz.png" alt="Md. Mahfuz Sarker" style="height: 32px; width: auto;">
+                        <div class="menu-drawer-brand d-flex align-items-center gap-2">
+                            <span class="brand-badge" style="font-size: 0.85rem; padding: 4px 9px;">MS</span>
+                            <h5 class="brand-title" style="font-size: 1.22rem;">Md. Mahfuz <span>Sarker</span></h5>
                         </div>
                         <button class="menu-close-btn" id="menu-close" aria-label="Close Navigation Menu">
                             <i class="bx bx-x"></i>
@@ -464,8 +466,8 @@
             <div class="row g-4 mb-5 footer_info_row" data-motion data-delay="100">
                 <div class="col-md-4">
                     <div class="footer_card">
-                        <div class="footer_icon_box">
-                            <img src="./Portfolio_files/icon-location.png" alt="Location Icon" class="footer_orig_icon_img">
+                        <div class="footer_icon_wrap">
+                            <img src="./Portfolio_files/icon-location.png" alt="Location Icon" class="footer_clean_icon">
                         </div>
                         <h5 class="footer_card_title">Location</h5>
                         <p class="footer_card_text">West Shewrapara, Kafrul, Dhaka, Bangladesh</p>
@@ -473,8 +475,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="footer_card">
-                        <div class="footer_icon_box">
-                            <img src="./Portfolio_files/icon-phone.png" alt="Phone Icon" class="footer_orig_icon_img">
+                        <div class="footer_icon_wrap">
+                            <img src="./Portfolio_files/icon-phone.png" alt="Phone Icon" class="footer_clean_icon">
                         </div>
                         <h5 class="footer_card_title">Direct Phone</h5>
                         <p class="footer_card_text">
@@ -484,8 +486,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="footer_card">
-                        <div class="footer_icon_box">
-                            <img src="./Portfolio_files/icon-email.png" alt="Email Icon" class="footer_orig_icon_img">
+                        <div class="footer_icon_wrap">
+                            <img src="./Portfolio_files/icon-email.png" alt="Email Icon" class="footer_clean_icon">
                         </div>
                         <h5 class="footer_card_title">Email Address</h5>
                         <p class="footer_card_text">
@@ -498,8 +500,9 @@
             <div class="footer_bottom pt-4">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <div class="footer_brand">
-                            <img src="./Portfolio_files/logo_mahfuz.png" alt="Md. Mahfuz Sarker" style="height: 34px; width: auto;">
+                        <div class="footer_brand d-flex align-items-center gap-2">
+                            <span class="brand-badge">MS</span>
+                            <h4 class="brand-title">Md. Mahfuz <span>Sarker</span></h4>
                         </div>
                         <p class="footer_copy mb-0 mt-2">© 2026 Md. Mahfuz Sarker. All rights reserved.</p>
                     </div>

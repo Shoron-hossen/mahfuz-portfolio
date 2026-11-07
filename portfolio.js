@@ -71,7 +71,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0" data-motion>
                     <div class="banner_box">
-                        <h1>👋 Hey, I am <br><span style="color: var(--primary-accent);">Md. Mahfuz Sarker</span></h1>
+                        <h1>Hey, I am <br><span style="color: var(--primary-accent);">Md. Mahfuz Sarker</span></h1>
                         <p>International Sales Executive | CSE Graduate<br>
                             Specializing in <span class="typed-text"></span><span class="cursor">&nbsp;</span>
                         </p>
@@ -122,23 +122,23 @@
         <div class="container">
             <div class="row g-3">
                 <div class="col-6 col-md-3">
-                    <a href="https://www.linkedin.com/in/md-mahfuz-sarker-b828b4253/" target="_blank">
+                    <a href="https://www.linkedin.com/in/md-mahfuz-sarker-b828b4253/" target="_blank" title="LinkedIn">
                         <img src="./Portfolio_files/LinkedIn.png" class="img-fluid" alt="LinkedIn">
                     </a>
                 </div>
                 <div class="col-6 col-md-3">
-                    <a href="https://github.com/221002349-maf" target="_blank">
-                        <img src="./Portfolio_files/Instagram.png" class="img-fluid" alt="GitHub">
+                    <a href="https://www.facebook.com/md.mahfuzsarker.58" target="_blank" title="Facebook">
+                        <img src="./Portfolio_files/Facebook.png" class="img-fluid" alt="Facebook">
                     </a>
                 </div>
                 <div class="col-6 col-md-3">
-                    <a href="mailto:mahfuzsarker6408@gmail.com">
-                        <img src="./Portfolio_files/Facebook.png" class="img-fluid" alt="Email">
+                    <a href="https://www.instagram.com/md.mahfuz.sarker/" target="_blank" title="Instagram">
+                        <img src="./Portfolio_files/Instagram.png" class="img-fluid" alt="Instagram">
                     </a>
                 </div>
                 <div class="col-6 col-md-3">
-                    <a href="./asset/Md. Mahfuz Sarker cv(S & M).pdf" target="_blank">
-                        <img src="./Portfolio_files/Medium.png" class="img-fluid active" alt="Resume Document">
+                    <a href="https://github.com/221002349-maf" target="_blank" title="GitHub">
+                        <img src="./Portfolio_files/GitHub.png" class="img-fluid" alt="GitHub">
                     </a>
                 </div>
             </div>
@@ -508,14 +508,14 @@
                             <a href="https://www.linkedin.com/in/md-mahfuz-sarker-b828b4253/" target="_blank" title="LinkedIn">
                                 <i class="bx bxl-linkedin"></i>
                             </a>
+                            <a href="https://www.facebook.com/md.mahfuzsarker.58" target="_blank" title="Facebook">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/md.mahfuz.sarker/" target="_blank" title="Instagram">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
                             <a href="https://github.com/221002349-maf" target="_blank" title="GitHub">
                                 <i class="bx bxl-github"></i>
-                            </a>
-                            <a href="mailto:mahfuzsarker6408@gmail.com" title="Email">
-                                <i class="bx bx-envelope"></i>
-                            </a>
-                            <a href="./asset/Md. Mahfuz Sarker cv(S & M).pdf" target="_blank" title="Download CV">
-                                <i class="bx bx-download"></i>
                             </a>
                         </div>
                     </div>

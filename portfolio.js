@@ -13,22 +13,32 @@
             basePath: './Portfolio_files/'
         },
 
-        // 1. Waterdrop Liquid Glass Navbar (No top bar above it)
+        // 1. Waterdrop Liquid Glass Navbar with Mobile Drawer & Close Button
         renderHeader: function () {
             return `
+    <div class="menu-backdrop" id="menu-backdrop"></div>
     <header class="header" id="header">
         <div class="container">
             <nav class="navbar">
                 <a class="brand" href="#Home">
-                    <span class="brand-badge">MS</span>
-                    <span>Mahfuz <span style="color: var(--primary-accent);">Sarker</span></span>
+                    <img src="./Portfolio_files/logo_mahfuz.png" alt="Md. Mahfuz Sarker" style="height: 38px; width: auto; object-fit: contain;">
                 </a>
-                <div class="burger" id="burger">
+                <div class="burger" id="burger" aria-label="Toggle navigation">
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
                 </div>
                 <div class="menu" id="menu">
+                    <!-- Drawer Header for Mobile with Brand and Close Button -->
+                    <div class="menu-drawer-header">
+                        <div class="menu-drawer-brand">
+                            <img src="./Portfolio_files/logo_mahfuz.png" alt="Md. Mahfuz Sarker" style="height: 32px; width: auto;">
+                        </div>
+                        <button class="menu-close-btn" id="menu-close" aria-label="Close Navigation Menu">
+                            <i class="bx bx-x"></i>
+                        </button>
+                    </div>
+
                     <ul class="menu-inner mb-0">
                         <li class="menu-item"><a href="#Home" class="menu-link">Home</a></li>
                         <li class="menu-item"><a href="#Services" class="menu-link">Services</a></li>
@@ -36,6 +46,16 @@
                         <li class="menu-item"><a href="#Experience" class="menu-link">Experience</a></li>
                         <li class="menu-item"><a href="#Contact" class="menu-link">Contact</a></li>
                     </ul>
+
+                    <!-- Drawer Actions for Mobile (CV Download & Hire Me) -->
+                    <div class="menu-drawer-actions">
+                        <a href="./asset/Md. Mahfuz Sarker cv(S & M).pdf" target="_blank" class="btn btn-warning menu-action-btn">
+                            <i class="bx bxs-file-pdf"></i> Download CV (PDF)
+                        </a>
+                        <a href="#Contact" class="btn btn-outline-hero menu-action-btn menu-link">
+                            <i class="bx bx-envelope"></i> Get In Touch
+                        </a>
+                    </div>
                 </div>
                 <a href="#Contact" class="menu-block">Get In Touch <i class="bx bxs-right-arrow-alt"></i></a>
             </nav>
@@ -55,16 +75,12 @@
                         <p>International Sales Executive | CSE Graduate<br>
                             Specializing in <span class="typed-text"></span><span class="cursor">&nbsp;</span>
                         </p>
-                        <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
-                            <a href="#Contact" class="btn btn-warning">
+                        <div class="hero_btn_group mb-4">
+                            <a href="#Contact" class="btn btn-warning hero_btn">
                                 Hire Me <i class="bx bxs-right-arrow-alt"></i>
                             </a>
-                            <a href="./asset/Md. Mahfuz Sarker cv(S & M).pdf" target="_blank" class="cv_download_btn">
-                                <i class="bx bxs-file-pdf"></i>
-                                <div class="text-start">
-                                    <h6 class="mb-0 text-white">DOWNLOAD</h6>
-                                    <p class="mb-0">My CV (PDF)</p>
-                                </div>
+                            <a href="./asset/Md. Mahfuz Sarker cv(S & M).pdf" target="_blank" class="btn btn-outline-hero hero_btn">
+                                <i class="bx bxs-file-pdf"></i> Download CV
                             </a>
                         </div>
                     </div>
@@ -449,16 +465,7 @@
                 <div class="col-md-4">
                     <div class="footer_card">
                         <div class="footer_icon_box">
-                            <svg class="footer_orig_icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="url(#locGrad)"/>
-                                <circle cx="12" cy="9" r="2.8" fill="#ffffff"/>
-                                <defs>
-                                    <linearGradient id="locGrad" x1="5" y1="2" x2="19" y2="22" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#34d399"/>
-                                        <stop offset="1" stop-color="#059669"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                            <img src="./Portfolio_files/icon-location.png" alt="Location Icon" class="footer_orig_icon_img">
                         </div>
                         <h5 class="footer_card_title">Location</h5>
                         <p class="footer_card_text">West Shewrapara, Kafrul, Dhaka, Bangladesh</p>
@@ -467,15 +474,7 @@
                 <div class="col-md-4">
                     <div class="footer_card">
                         <div class="footer_icon_box">
-                            <svg class="footer_orig_icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1.01A11.36 11.36 0 0 1 8.57 3.9c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.52c0-.55-.45-1-.99-1z" fill="url(#phoneGrad)"/>
-                                <defs>
-                                    <linearGradient id="phoneGrad" x1="3" y1="2.9" x2="21" y2="20.9" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#34d399"/>
-                                        <stop offset="1" stop-color="#059669"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                            <img src="./Portfolio_files/icon-phone.png" alt="Phone Icon" class="footer_orig_icon_img">
                         </div>
                         <h5 class="footer_card_title">Direct Phone</h5>
                         <p class="footer_card_text">
@@ -486,15 +485,7 @@
                 <div class="col-md-4">
                     <div class="footer_card">
                         <div class="footer_icon_box">
-                            <svg class="footer_orig_icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="url(#mailGrad)"/>
-                                <defs>
-                                    <linearGradient id="mailGrad" x1="2" y1="4" x2="22" y2="20" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#34d399"/>
-                                        <stop offset="1" stop-color="#059669"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                            <img src="./Portfolio_files/icon-email.png" alt="Email Icon" class="footer_orig_icon_img">
                         </div>
                         <h5 class="footer_card_title">Email Address</h5>
                         <p class="footer_card_text">
@@ -508,8 +499,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         <div class="footer_brand">
-                            <span class="brand-badge">MS</span>
-                            <span class="text-white fw-bold">Md. Mahfuz Sarker</span>
+                            <img src="./Portfolio_files/logo_mahfuz.png" alt="Md. Mahfuz Sarker" style="height: 34px; width: auto;">
                         </div>
                         <p class="footer_copy mb-0 mt-2">© 2026 Md. Mahfuz Sarker. All rights reserved.</p>
                     </div>
@@ -550,29 +540,48 @@
 
         // Interactive Handlers
         initInteractions: function () {
-            // 1. Mobile Menu / Burger Handlers
+            // 1. Mobile Menu / Burger Handlers with Dedicated Close Button & Backdrop
             const navbarMenu = document.getElementById("menu");
             const burgerMenu = document.getElementById("burger");
+            const menuCloseBtn = document.getElementById("menu-close");
+            const menuBackdrop = document.getElementById("menu-backdrop");
+
+            const closeMenu = () => {
+                if (burgerMenu) burgerMenu.classList.remove("is-active");
+                if (navbarMenu) navbarMenu.classList.remove("is-active");
+                if (menuBackdrop) menuBackdrop.classList.remove("is-active");
+            };
+
+            const openMenu = () => {
+                if (burgerMenu) burgerMenu.classList.add("is-active");
+                if (navbarMenu) navbarMenu.classList.add("is-active");
+                if (menuBackdrop) menuBackdrop.classList.add("is-active");
+            };
 
             if (burgerMenu && navbarMenu) {
                 burgerMenu.addEventListener("click", () => {
-                    burgerMenu.classList.toggle("is-active");
-                    navbarMenu.classList.toggle("is-active");
+                    if (navbarMenu.classList.contains("is-active")) {
+                        closeMenu();
+                    } else {
+                        openMenu();
+                    }
                 });
 
+                if (menuCloseBtn) {
+                    menuCloseBtn.addEventListener("click", closeMenu);
+                }
+
+                if (menuBackdrop) {
+                    menuBackdrop.addEventListener("click", closeMenu);
+                }
+
                 document.querySelectorAll(".menu-link").forEach((link) => {
-                    link.addEventListener("click", () => {
-                        burgerMenu.classList.remove("is-active");
-                        navbarMenu.classList.remove("is-active");
-                    });
+                    link.addEventListener("click", closeMenu);
                 });
 
                 window.addEventListener("resize", () => {
                     if (window.innerWidth >= 992) {
-                        if (navbarMenu.classList.contains("is-active")) {
-                            navbarMenu.classList.remove("is-active");
-                            burgerMenu.classList.remove("is-active");
-                        }
+                        closeMenu();
                     }
                 });
             }

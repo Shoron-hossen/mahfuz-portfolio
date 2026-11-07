@@ -1,0 +1,17 @@
+{
+  "name": "mahfuz-portfolio",
+  "version": "1.0.0",
+  "description": "Afzal Abbasi / Mahfuz Portfolio Website",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "lenis": "^1.3.27"
+  }
+}

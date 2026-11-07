@@ -15,14 +15,31 @@
 
         // 1. Waterdrop Liquid Glass Navbar with Mobile Drawer & Close Button
         renderHeader: function () {
+            const brandSvg = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 50" class="brand-signature-svg" fill="none">
+                    <path d="M 8 39 L 16 11 L 28 30 L 41 11 L 49 43 C 53 22, 68 9, 92 9 L 295 9" 
+                          stroke="var(--primary-accent, #10b981)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <text x="60" y="35" font-family="'Montserrat', sans-serif" font-size="21" font-weight="800" letter-spacing="-0.3">
+                        <tspan fill="#ffffff">Md. Mahfuz </tspan><tspan fill="var(--primary-accent, #10b981)">Sarker</tspan>
+                    </text>
+                </svg>
+            `;
+            const drawerBrandSvg = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 50" class="brand-signature-svg drawer-brand-svg" fill="none">
+                    <path d="M 8 39 L 16 11 L 28 30 L 41 11 L 49 43 C 53 22, 68 9, 92 9 L 295 9" 
+                          stroke="var(--primary-accent, #10b981)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <text x="60" y="35" font-family="'Montserrat', sans-serif" font-size="21" font-weight="800" letter-spacing="-0.3">
+                        <tspan fill="#ffffff">Md. Mahfuz </tspan><tspan fill="var(--primary-accent, #10b981)">Sarker</tspan>
+                    </text>
+                </svg>
+            `;
             return `
     <div class="menu-backdrop" id="menu-backdrop"></div>
     <header class="header" id="header">
         <div class="container">
             <nav class="navbar">
-                <a class="brand" href="#Home">
-                    <span class="brand-badge">MS</span>
-                    <h4 class="brand-title">Md. Mahfuz <span>Sarker</span></h4>
+                <a class="brand" href="#Home" aria-label="Md. Mahfuz Sarker">
+                    ${brandSvg}
                 </a>
                 <div class="burger" id="burger" aria-label="Toggle navigation">
                     <span class="burger-line"></span>
@@ -32,9 +49,8 @@
                 <div class="menu" id="menu">
                     <!-- Drawer Header for Mobile with Brand and Close Button -->
                     <div class="menu-drawer-header">
-                        <div class="menu-drawer-brand d-flex align-items-center gap-2">
-                            <span class="brand-badge" style="font-size: 0.85rem; padding: 4px 9px;">MS</span>
-                            <h5 class="brand-title" style="font-size: 1.22rem;">Md. Mahfuz <span>Sarker</span></h5>
+                        <div class="menu-drawer-brand d-flex align-items-center">
+                            ${drawerBrandSvg}
                         </div>
                         <button class="menu-close-btn" id="menu-close" aria-label="Close Navigation Menu">
                             <i class="bx bx-x"></i>
@@ -443,6 +459,15 @@
 
         // 7. Executive Bigger Text Footer with Complete Contact Info
         renderFooter: function () {
+            const footerBrandSvg = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 50" class="brand-signature-svg footer-brand-svg" fill="none">
+                    <path d="M 8 39 L 16 11 L 28 30 L 41 11 L 49 43 C 53 22, 68 9, 92 9 L 295 9" 
+                          stroke="var(--primary-accent, #10b981)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <text x="60" y="35" font-family="'Montserrat', sans-serif" font-size="21" font-weight="800" letter-spacing="-0.3">
+                        <tspan fill="#ffffff">Md. Mahfuz </tspan><tspan fill="var(--primary-accent, #10b981)">Sarker</tspan>
+                    </text>
+                </svg>
+            `;
             return `
     <footer class="footer_cntr" id="Contact">
         <div class="container">
@@ -500,9 +525,8 @@
             <div class="footer_bottom pt-4">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <div class="footer_brand d-flex align-items-center gap-2">
-                            <span class="brand-badge">MS</span>
-                            <h4 class="brand-title">Md. Mahfuz <span>Sarker</span></h4>
+                        <div class="footer_brand d-flex align-items-center">
+                            ${footerBrandSvg}
                         </div>
                         <p class="footer_copy mb-0 mt-2">© 2026 Md. Mahfuz Sarker. All rights reserved.</p>
                     </div>

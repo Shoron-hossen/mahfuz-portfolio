@@ -117,6 +117,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap !important;
   width: 100%;
   padding: 10px 22px;
   background: rgba(10, 21, 49, 0.78);
@@ -135,41 +136,41 @@ ul {
   box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.4);
 }
 
+/* Signature Brand Lockup - Professional, Never Breaks */
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 1;
 }
 
 .brand:hover {
-  color: var(--text-heading);
+  opacity: 0.92;
 }
 
-.brand-badge {
-  background: linear-gradient(135deg, #059669, #10b981);
-  color: #ffffff;
-  border-radius: var(--radius-sm);
-  padding: 5px 11px;
-  font-size: 0.95rem;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+.brand-signature-svg {
+  height: 38px;
+  width: auto;
+  max-width: 250px;
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
 }
 
-.brand-title {
-  font-size: 1.45rem;
-  font-weight: 800;
-  color: #ffffff;
-  letter-spacing: -0.2px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 0;
+.brand:hover .brand-signature-svg {
+  transform: translateY(-1px);
 }
 
-.brand-title span {
-  color: var(--primary-accent);
+.drawer-brand-svg {
+  height: 30px;
+  max-width: 200px;
+}
+
+.footer-brand-svg {
+  height: 36px;
+  max-width: 240px;
 }
 
 .menu-inner {
@@ -252,9 +253,23 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .navbar {
+    padding: 8px 14px;
+    flex-wrap: nowrap !important;
+  }
+  .brand {
+    min-width: 0;
+    flex-shrink: 1;
+  }
+  .brand-signature-svg {
+    height: 30px;
+    max-width: 195px;
+  }
   .burger {
     display: block;
     z-index: 1002;
+    margin-left: 8px;
+    flex-shrink: 0;
   }
   .menu {
     position: fixed;

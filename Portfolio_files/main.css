@@ -1309,9 +1309,33 @@ ul {
   font-size: 1.15rem;
 }
 
+.footer_subbar {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 .footer_copy {
-  font-size: 14.5px;
+  font-size: 14px;
   color: var(--text-muted);
+}
+
+.footer_developer {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.footer_dev_link {
+  color: var(--primary-accent);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+.footer_dev_link:hover {
+  color: #34d399;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transform: translateY(-1px);
 }
 
 .footer_social_links {

@@ -523,29 +523,35 @@
             </div>
 
             <div class="footer_bottom pt-4">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <div class="footer_brand d-flex align-items-center">
+                <div class="row align-items-center gy-3">
+                    <div class="col-md-6 text-center text-md-start">
+                        <div class="footer_brand d-flex align-items-center justify-content-center justify-content-md-start">
                             ${footerBrandSvg}
                         </div>
-                        <p class="footer_copy mb-0 mt-2">© 2026 Md. Mahfuz Sarker. All rights reserved.</p>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer_social_links">
-                            <a href="https://www.linkedin.com/in/md-mahfuz-sarker-b828b4253/" target="_blank" title="LinkedIn">
+                            <a href="https://www.linkedin.com/in/md-mahfuz-sarker-b828b4253/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                                 <i class="bx bxl-linkedin"></i>
                             </a>
-                            <a href="https://www.facebook.com/md.mahfuzsarker.58" target="_blank" title="Facebook">
+                            <a href="https://www.facebook.com/md.mahfuzsarker.58" target="_blank" rel="noopener noreferrer" title="Facebook">
                                 <i class="bx bxl-facebook"></i>
                             </a>
-                            <a href="https://www.instagram.com/md.mahfuz.sarker/" target="_blank" title="Instagram">
+                            <a href="https://www.instagram.com/md.mahfuz.sarker/" target="_blank" rel="noopener noreferrer" title="Instagram">
                                 <i class="bx bxl-instagram"></i>
                             </a>
-                            <a href="https://github.com/221002349-maf" target="_blank" title="GitHub">
+                            <a href="https://github.com/221002349-maf" target="_blank" rel="noopener noreferrer" title="GitHub">
                                 <i class="bx bxl-github"></i>
                             </a>
                         </div>
                     </div>
+                </div>
+
+                <div class="footer_subbar mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                    <p class="footer_copy mb-0">All rights reserved 2026</p>
+                    <p class="footer_developer mb-0">
+                        Develop by <a href="https://shoron-portfolio.pages.dev/" target="_blank" rel="noopener noreferrer" class="footer_dev_link">Shoron Hossen</a>
+                    </p>
                 </div>
             </div>
         </div>
